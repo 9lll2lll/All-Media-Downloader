@@ -11,7 +11,7 @@ class Config((object)):
     API_HASH = os.environ.get("API_HASH", "b2aea0b75ceca34bf5333107ac526c02")
     # Get these values from my.telegram.org
     # Banned Unwanted Members..
-    BANNED_USERS = {int(x) for x in os.environ.get("BANNED_USERS", "887108671").split()}
+    BANNED_USERS = {int(x) for x in os.environ.get("BANNED_USERS", "").split()}
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # The download location for auth users.
@@ -34,7 +34,7 @@ class Config((object)):
     # watermark file
     DEF_WATER_MARK_FILE = ""
     # your telegram id
-    OWNER_ID = int(os.environ.get("OWNER_ID", "ososofkdfkossjfkbot"))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "887108671"))
     # database session name, example: xurluploader
     SESSION_NAME = os.environ.get("SESSION_NAME", "1ApWapzMBu3ovTJgp-xdmo-ujOni9vM7vShRpcLW609aJCmM0_y6NDbko5PEJm4vzVVavZX74fkKxbMnMyQMxEwX5W-hAjqjpW2u-miMryZSaYNY36Iu9nfd2yPJyYLet5yUhksCtMRL-0dvYjgpKX5xuhkXn-fQBY5QGvXR97IIh64mzkxXr6KlVq0skdTyoTZwiVafSnDXucoJLIFlhSiP3QrlaWS-9J2DFhjd35M_fj14xGeDWk60Lz8jLaevOQPS6hrQgCx8nJEGfi-XeWlRaJLWN52pKomu1Njm0wqaXgjgdFBFoQ38x24uOP5YNSqJ0UONTb9aLJ4eYVo57awmOfVY6LBk=")
     # database uri (mongodb)
